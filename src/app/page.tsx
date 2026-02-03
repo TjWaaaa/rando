@@ -2,9 +2,7 @@
 
 import React from 'react'
 import { useRouter } from 'next/navigation'
-
-const imgIcon = 'http://localhost:3845/assets/afb396f5dc0ad9e2aeaca3a8fa30945ec3b70711.svg'
-const imgIcon1 = 'http://localhost:3845/assets/b53718d407657bb4acbb01d2f11aae418fb90bb2.svg'
+import Image from 'next/image'
 
 export default function Home() {
   const router = useRouter()
@@ -155,7 +153,7 @@ export default function Home() {
                       marginTop: `calc(var(--size) / -2)`,
                     }}
                   >
-                    <img alt="Flying airplane" className="block w-full h-full" src={imgIcon} />
+                    <Image alt="Flying airplane" className="block w-full h-full" src="/plane.svg" />
                   </div>
                 </div>
               )
@@ -180,10 +178,10 @@ export default function Home() {
             {/* Icons Container */}
             <div className="relative w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 animate-slide-in-up">
               <div className="absolute left-0 top-0 w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32">
-                <img alt="Airplane Icon" className="block w-full h-full" src={imgIcon} />
+                <Image alt="Airplane Icon" className="block w-full h-full" src="/plane.svg" />
               </div>
               <div className="absolute left-16 sm:left-20 md:left-24 -top-2 sm:-top-3 md:-top-4 w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12">
-                <img alt="Sparkle Icon" className="block w-full h-full" src={imgIcon1} />
+                <Image alt="Sparkle Icon" className="block w-full h-full" src="/star.svg" />
               </div>
             </div>
 
