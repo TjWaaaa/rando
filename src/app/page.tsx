@@ -153,7 +153,13 @@ export default function Home() {
                       marginTop: `calc(var(--size) / -2)`,
                     }}
                   >
-                    <Image alt="Flying airplane" className="block w-full h-full" src="/plane.svg" />
+                    <Image
+                      width={256}
+                      height={256}
+                      alt="Flying airplane"
+                      className="block w-full h-full"
+                      src="/plane.svg"
+                    />
                   </div>
                 </div>
               )
@@ -178,10 +184,10 @@ export default function Home() {
             {/* Icons Container */}
             <div className="relative w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 animate-slide-in-up">
               <div className="absolute left-0 top-0 w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32">
-                <Image alt="Airplane Icon" className="block w-full h-full" src="/plane.svg" />
+                <Image width={256} height={256} alt="Airplane Icon" className="block w-full h-full" src="/plane.svg" />
               </div>
               <div className="absolute left-16 sm:left-20 md:left-24 -top-2 sm:-top-3 md:-top-4 w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12">
-                <Image alt="Sparkle Icon" className="block w-full h-full" src="/star.svg" />
+                <Image width={32} height={32} alt="Sparkle Icon" className="block w-full h-full" src="/star.svg" />
               </div>
             </div>
 
@@ -197,7 +203,7 @@ export default function Home() {
               {/* Yes Button */}
               <button
                 onClick={handleYesClick}
-                className="absolute left-0 top-0 w-24 sm:w-28 md:w-30.75 h-12 sm:h-14 md:h-15 bg-[#00c950] rounded-full shadow-lg hover:opacity-90 transition-transform duration-300 flex items-center justify-center z-10 cursor-pointer"
+                className="absolute left-0 top-0 w-24 sm:w-28 md:w-30.75 h-12 sm:h-14 md:h-15 bg-[#00c950] rounded-full shadow-lg hover:scale-105 transition-transform duration-300 flex items-center justify-center z-10 cursor-pointer"
                 style={{
                   transform: `scale(${1 + clickCount * 0.15})`,
                   transformOrigin: 'center',
@@ -213,7 +219,7 @@ export default function Home() {
                 ref={noButtonRef}
                 onMouseEnter={handleNoHover}
                 onClick={handleNoHover}
-                className={`w-20 sm:w-22 md:w-22 h-12 sm:h-14 md:h-15 bg-[#fb2c36] rounded-full shadow-lg hover:opacity-90 flex items-center justify-center ${
+                className={`w-20 sm:w-22 md:w-22 h-12 sm:h-14 md:h-15 bg-[#fb2c36] rounded-full shadow-lg flex items-center justify-center ${
                   noButtonPos ? 'fixed' : 'absolute'
                 }`}
                 style={
