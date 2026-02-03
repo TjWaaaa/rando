@@ -187,7 +187,7 @@ export default function Home() {
             {/* Heading */}
             <div className="flex items-center justify-center px-4 animate-slide-in-up">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal leading-10 sm:leading-12 md:leading-14 lg:leading-15 text-center text-[#1e2939] font-['Arimo:Regular',sans-serif]">
-                {'Lust auf Norwegen? :)'}
+                {'Freust du dich auf Norwegen? :)'}
               </h1>
             </div>
 
