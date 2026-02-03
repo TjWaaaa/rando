@@ -93,28 +93,6 @@ export default function CountdownPage() {
             Nur noch so lange...
           </h1>
 
-          {/* Toggle Switch */}
-          <div className="flex items-center gap-4">
-            <button
-              onClick={() => setShowExtended(false)}
-              className={`px-4 py-2 rounded-full font-medium transition-all ${
-                showExtended ? 'bg-[#4f39f6] text-white shadow-lg' : 'bg-white text-[#4f39f6] border-2 border-[#4f39f6]'
-              }`}
-            >
-              Kurz
-            </button>
-            <button
-              onClick={() => setShowExtended(true)}
-              className={`px-4 py-2 rounded-full font-medium transition-all ${
-                !showExtended
-                  ? 'bg-[#4f39f6] text-white shadow-lg'
-                  : 'bg-white text-[#4f39f6] border-2 border-[#4f39f6]'
-              }`}
-            >
-              Lang
-            </button>
-          </div>
-
           {/* Extended Mode: Months and Weeks */}
           {showExtended && (
             <div className="flex gap-4 sm:gap-6 md:gap-8 items-center justify-center">
@@ -232,6 +210,28 @@ export default function CountdownPage() {
                 <p className="text-[#4a5565] text-xs sm:text-sm md:text-base lg:text-lg font-normal text-center">Sek</p>
               </div>
             </div>
+          </div>
+
+          {/* Toggle Switch */}
+          <div className="flex items-center gap-4">
+            <button
+              onClick={() => setShowExtended(false)}
+              className={`px-4 py-2 rounded-full font-medium transition-all ${
+                showExtended ? 'bg-[#4f39f6] text-white shadow-lg' : 'bg-white text-[#4f39f6] border-2 border-[#4f39f6]'
+              }`}
+            >
+              Kurz
+            </button>
+            <button
+              onClick={() => setShowExtended(true)}
+              className={`px-4 py-2 rounded-full font-medium transition-all ${
+                !showExtended
+                  ? 'bg-[#4f39f6] text-white shadow-lg'
+                  : 'bg-white text-[#4f39f6] border-2 border-[#4f39f6]'
+              }`}
+            >
+              Lang
+            </button>
           </div>
         </div>
       </div>
