@@ -19,7 +19,7 @@ export default function CountdownPage() {
   const [showExtended, setShowExtended] = useState(false)
 
   useEffect(() => {
-    const targetDate = new Date('2026-03-29T14:25:00')
+    const targetDate = new Date('2026-06-05T22:30:00')
 
     const calculateTimeLeft = () => {
       const now = new Date()
